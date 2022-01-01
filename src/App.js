@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import logo from '../src/img/happy-new-year-logo.webp';
+import logo from '../src/img/happy-new-year-logo.png';
 import './App.css';
 import Balloon from './component/Balloon';
 import BalloonStatic from './component/BalloonStatic';

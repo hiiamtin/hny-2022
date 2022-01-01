@@ -1,4 +1,4 @@
-import logo from '../img/happy-new-year-logo.webp';
+import logo from '../img/happy-new-year-logo.png';
 import '../App.css';
 import "../style/Youtube.css";
 import Balloon from '../component/Balloon';
