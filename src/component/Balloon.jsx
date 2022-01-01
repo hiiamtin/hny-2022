@@ -29,13 +29,13 @@ const balloonArr = Array(25)
 export default function Balloon() {
     const [balloons, setBalloons] = useState(balloonArr);
 
-    const onPop = (index) => {
-        setBalloons((balloons) => {
-            const b = [...balloons];
-            b[index].popped = true;
-            return b;
-        });
-    };
+    // const onPop = (index) => {
+    //     setBalloons((balloons) => {
+    //         const b = [...balloons];
+    //         b[index].popped = true;
+    //         return b;
+    //     });
+    // };
 
     return (
         <div className="balloon-container">
