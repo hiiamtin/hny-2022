@@ -903,7 +903,7 @@ const listWish = [
         horoscope: 'https://www.sanook.com/horoscope/myhoro/yearly/'
     },
     {
-        code: "glauy",
+        code: "gluay",
         name: "กล้วย (aka กล้วยกรุงศรี)",
         defaultCount: 30,
         balloons: [""],
