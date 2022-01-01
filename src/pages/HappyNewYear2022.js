@@ -1,9 +1,11 @@
 import logo from '../img/happy-new-year-logo.webp';
 import '../App.css';
+import "../style/Youtube.css";
 import Balloon from '../component/Balloon';
 import BalloonStatic from '../component/BalloonStatic';
 import { useParams, Navigate } from "react-router-dom";
 import listWish from './listwish';
+import YoutubeEmbed from "../component/YoutubeEmbed";
 
 function random(num) {
     return Math.floor(Math.random() * num)
@@ -24,6 +26,7 @@ function HappyNewYear2022() {
                     count: random(20) + data.defaultCount,
                     message: data.balloons
                 }} />
+                {/* ขี้โกงอย่ามาอ่านในนี้นะ  */}
                 {data.messages.map((e) => {
                     return (
                         <>
@@ -33,7 +36,10 @@ function HappyNewYear2022() {
                                     :
                                     e.type === 'img' ?
                                         <img src={e.mess} />
-                                        : null
+                                        :
+                                        e.type === 'youtube' ?
+                                            <YoutubeEmbed embedId={e.mess} />
+                                            : null
                             }
                             <BalloonStatic {...{
                                 count: random(20) + data.defaultCount + e.count,
@@ -43,7 +49,7 @@ function HappyNewYear2022() {
                     )
                 })
                 }
-                <p>สุดท้ายนี้เอาดวงปี 2565 มาฝากจ้า</p>
+                <p>สุดท้ายท้ายสุดเอาดวงปี 2565 มาฝากจ้า</p>
                 <a className='App-link' href='https://www.sanook.com/horoscope/215349/'>จิ้มๆๆ</a>
             </header>
             <Balloon />
