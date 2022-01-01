@@ -34,9 +34,10 @@ const config = {
   };
 
 export default function BalloonStatic(props) {
+    const message = props.message
     const balloonArr = Array(props.count)
     .fill()
-    .map((_, i) => ({ id: i, popped: false, showed: false, style: getRandomStyles() }));
+    .map((_, i) => ({ id: i, popped: false, showed: false, style: getRandomStyles(), message:message[i%2]}));
     const [balloons, setBalloons] = useState(balloonArr);
 
     const setShow = (index, value) => {
@@ -61,7 +62,7 @@ export default function BalloonStatic(props) {
         setTimeout(() => {
             setShow(index, false)
         }, 1000);
-        console.log(balloons)
+        console.log(balloons,props,message,message.length)
     };
 
     return (

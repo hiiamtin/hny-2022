@@ -1,11 +1,11 @@
 .App {
   text-align: center;
   background-color: #FAFAD2;
+  font-family: 'Mitr', sans-serif;
 }
 
 .App-logo {
   height: 50vmin;
-  margin-bottom: 100px;
   pointer-events: none;
 }
 
@@ -25,10 +25,12 @@
   font-size: calc(10px + 2vmin);
   color: #292f33;
   overflow: hidden;
+  
 }
 
 .App-link {
   color: #61dafb;
+  z-index: 4;
 }
 
 @keyframes App-logo-spin {
