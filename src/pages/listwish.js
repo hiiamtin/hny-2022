@@ -720,7 +720,7 @@ const listWish = [
     {
         code: "chung",
         name: "ชุ้ง",
-        defaultCount: 30,
+        defaultCount: 0,
         balloons: [""],
         messages: [
             {
