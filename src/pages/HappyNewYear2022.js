@@ -26,7 +26,7 @@ function HappyNewYear2022() {
                     count: random(20) + data.defaultCount,
                     message: data.balloons
                 }} />
-                {/* ขี้โกงอย่ามาอ่านในนี้นะ  */}
+                <p hidden>ขี้โกงอย่ามาอ่านในนี้นะ</p>
                 {data.messages.map((e) => {
                     return (
                         <>
