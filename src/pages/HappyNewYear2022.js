@@ -50,7 +50,7 @@ function HappyNewYear2022() {
                 })
                 }
                 <p>สุดท้ายท้ายสุดเอาดวงปี 2565 มาฝากจ้า</p>
-                <a className='App-link' href='https://www.sanook.com/horoscope/215349/'>จิ้มๆๆ</a>
+                <a className='App-link' href={data.horoscope}>จิ้มๆๆ</a>
             </header>
             <Balloon />
             <footer>

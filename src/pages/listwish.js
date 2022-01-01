@@ -124,11 +124,22 @@ const listWish = [
             {
                 type:"text",
                 count: 10,
-                mess:"รักที่สุดเลยยยยย❤️",
+                mess:"สมัคร Zipmex วันนี้ - KYC รวดเร็ว ไม่เสียเวลานาน<br>สมัครฟรีกับ Zipmex เทรดง่าย 24 ชั่วโมง ค่าธรรมเนียมต่ำ ยืนยันตัวตนเร็ว สมัครบัญชีเลยตอนนี้",
+            },
+            {
+                type:"text",
+                count: 10,
+                mess:"ล้อเล่น อ่ะสุดท้ายละๆ555",
+            },
+            {
+                type:"text",
+                count: 10,
+                mess:"บอกว่า รักที่สุดเลยยยยย❤️",
             },
             
         ],
-        gif: fing
+        gif: fing,
+        horoscope: 'https://www.sanook.com/horoscope/215349/'
     },
     {
         code: "champ",
@@ -308,11 +319,17 @@ const listWish = [
             },
             {
                 type:"text",
+                count: 40,
+                mess:"สมัคร Zipmex วันนี้ - KYC รวดเร็ว ไม่เสียเวลานาน<br>สมัครฟรีกับ Zipmex เทรดง่าย 24 ชั่วโมง ค่าธรรมเนียมต่ำ ยืนยันตัวตนเร็ว สมัครบัญชีเลยตอนนี้",
+            },
+            {
+                type:"text",
                 count: 10,
-                mess:"",
+                mess:"ล้อเล่นๆ แคปข้อความก่อนหน้านี้มาสิ<br>แล้วส่ง email ที่ผูกกับ zipmex มามีของขวัญจะให้",
             },
         ],
-        gif: fing
+        gif: fing,
+        horoscope: 'https://www.sanook.com/horoscope/215393/'
     }
 ]
 
