@@ -1,0 +1,6 @@
+.bubble-container {
+  position: absolute;
+  overflow: visible;
+  margin-left: 50px;
+  z-index: 9999;
+}

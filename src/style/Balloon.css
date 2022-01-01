@@ -1,0 +1,120 @@
+.balloon-container {
+    height: 100vh;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.balloon-static-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+}
+
+
+.balloon {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.balloon-static {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+    margin-bottom: 25px;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: balloons;
+}
+
+.balloon:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon-static:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 115px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon-static:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 108px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-300vh);
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes balloons {
+    0%, 100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+    50% {
+        transform: translateY(-25px) rotate(4deg);
+    }
+}
