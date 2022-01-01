@@ -17,7 +17,7 @@ function App() {
           </main>
         }
         />
-        <Route path="*" element={<Navigate to="/NotFound" /> }/>
+        <Route path="*" element={<Navigate to="/NotFound" />} />
       </Routes>
     </div >
   );
@@ -29,7 +29,10 @@ function Home() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>สวัสดีปีใหม่นะครับ</p>
-        <BalloonStatic count={5} />
+        <BalloonStatic {...{
+          count: 5,
+          message: []
+        }} />
       </header>
       <Balloon />
     </>
